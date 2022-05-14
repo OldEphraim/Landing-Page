@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css?family=Akshar&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 870px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 870px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+#navbar {
+  position: relative;
+  background-color: #3EBFFF;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "navbar-logo empty-cell empty-cell empty-cell navbar-about-container navbar-services-container navbar-projects-container navbar-contact-container";
+}
+
+#navbar-logo {
+  font-family: "Akshar";
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+#navbar-about-container, #navbar-services-container, #navbar-projects-container, #navbar-contact-container {
+  margin-top: 15%;
+  margin-left: 75%;
+  background-color: #3EBFFF;
+  height: 20px;
+  width: 60%;
+  border-radius: 5px;
+  white-space: pre;
+}
+
+@media (min-width: 870px) {
+#navbar-about-container:hover, #navbar-services-container:hover, #navbar-projects-container:hover, #navbar-contact-container:hover {
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  cursor: pointer;
+}
+}
+
+#navbar-about, #navbar-services, #navbar-projects, #navbar-contact {
+  font-family: "Arvo";
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+}
+
+#hamburger-icon {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  z-index: 2;
+}
+
+#hamburger-icon:hover {
+  cursor: pointer;
+}
+
+#hamburger-menu {
+  display: none;
+  grid-template-rows: 25px 25px 25px 25px;
+  grid-template-areas: "hamburger-row-1"
+  "hamburger-row-2"
+  "hamburger-row-3"
+  "hamburger-row-4";
+  z-index: 1;
+  position: fixed;
+  right: 0px;
+  top: 50px;
+  height: 100px;
+  width: 30%;
+  background-color: #3EBFFF;
+}
+
+#hamburger-row-1, #hamburger-row-2, #hamburger-row-3, #hamburger-row-4 {
+  font-family: "Arvo";
+  font-size: 15px;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  height: 350px;
+  display: block;
+  background-color: #3EBFFF;
+  z-index: 0;
+}
+
+#header-words {
+  position: absolute;
+  top: 9%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 20px;
+  font-family: "Arvo";
+  font-weight: bold;
+  z-index: 1;
+}
+
+@media (max-width: 870px) {
+  #header-words {
+    font-size: 30px !important;
+  }
+}
+
+@media (min-width: 870px) {
+  #header-words {
+    font-size: 42px !important;
+  }
+}
+
+#arrow-down {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 25%;
+  z-index: 1;
+}
+
+#header-image {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+}
+
+main {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+    "1a 1b"
+    "2a 2b"
+    "3a 3b";
+}
+
+#transform-brand-1a, #transform-brand-2b {
+  position: relative;
+}
+
+#transform-header-1a, #transform-header-2b {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-family: "Spectral";
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+#transform-text-1a, #transform-text-2b {
+  position: absolute;
+  left: 20%;
+  top: 55%;
+  font-family: "Akshar";
+}
+
+#learn-more-1a, #learn-more-2b {
+  position: absolute;
+  left: 20%;
+  top: 80%;
+  font-family: "Arvo";
+  text-transform: uppercase;
+}
+
+#learn-more-1a:hover, #learn-more-2b:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#egg-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "egg-left-column egg-right-column";
+  z-index: 0;
+}
+
+#egg {
+  position: absolute;
+  right: 20%;
+  max-height: 350px;
+  z-index: 1;
+}
+
+#egg-left-column {
+  z-index: 0;
+  background: linear-gradient(to bottom, #FDD302, #FED000);
+}
+
+#egg-right-column {
+  z-index: 0;
+  background: #FED501;
+}
+
+#cup-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "cup-left-column cup-right-column";
+}
+
+#cup {
+  position: absolute;
+  left: 20%;
+  max-height: 350px;
+  z-index: 1;
+}
+
+#cup-left-column {
+  z-index: 0;
+  background: linear-gradient(to bottom, #FE7A6B, #FF7D6D, #FF8071, #FF8173, #FE7F6E, #FE7968, #FD7869, #FD7869, #FF8173);
+}
+
+#cup-right-column {
+  z-index: 0;
+  background: linear-gradient(to bottom, #FD695D, #FF6B5F, #FE6F61, #FF7062, #FF7364, #FE7263, #FF7163, #FF6F64, #FF7364);
+}
+
+#berry-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "berry-left-column berry-right-column"
+}
+
+#berry {
+  position: absolute;
+  left: 20%;
+  max-height: 350px;
+  z-index: 1;
+}
+
+#berry-left-column {
+  z-index: 0;
+  background: linear-gradient(to bottom, #9EDCCD, #9FDCCD, #97D7C7)
+}
+
+#berry-right-column {
+  z-index: 0;
+  background: linear-gradient(to bottom, #9BDBCD, #9AD9CE, #93D5C9, #8DD1C2, #8BD3C5)
+}
+
+#berry-header {
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  left: 40%;
+  font-family: "Spectral";
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+#berry-text, #orange-text {
+  position: absolute;
+  z-index: 2;
+  top: 75%;
+  left: 35%;
+  font-family: "Arvo";
+  font-size: 12px;
+  white-space: pre;
+}
+
+#orange-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "orange-left-column orange-right-column"
+}
+
+#orange {
+  position: absolute;
+  left: 20%;
+  max-height: 350px;
+  z-index: 1;
+}
+
+#orange-left-column {
+  z-index: 0;
+  background: linear-gradient(to bottom, #56BFF6, #53C0F8, #55C4FC, #5DC6FF, #5DC6FD, #5FC8FF, #5EC9FF, #55C6FE, #51C2FE);
+}
+
+#orange-right-column {
+  z-index: 0;
+  background: linear-gradient(to bottom, #4BC8FE, #4ECCFF, #50CEFF, #52CFFF, #57D2FE, #57D2FE, #48C9FF, #57D1FF, #5CD0FF, #5BCFFE, #5BD1FF, #5ED3FF, #5BD1FF);
+}
+
+#orange-header {
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  left: 45%;
+  font-family: "Spectral";
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+#wrapper {
+  max-width: 100%;
+}
+
+#mobile-egg {
+  background: #FED501;
+}
+
+#mobile-transform, #mobile-stand {
+  max-width: 100%;
+}
+
+#mobile-transform-header, #mobile-stand-header {
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Spectral";
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+#mobile-transform-text, #mobile-stand-text {
+  margin-top: 2%;
+  text-align: center;
+  font-family: "Akshar";
+}
+
+#mobile-learn-more {
+  margin-top: 2%;
+  text-align: center;
+  font-family: "Arvo";
+  text-transform: uppercase;
+  margin-bottom: 8%;
+}
+
+#mobile-learn-more:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#mobile-cup {
+  background: linear-gradient(to bottom, #FD695D, #FF6B5F, #FE6F61, #FF7062, #FF7364, #FE7263, #FF7163, #FF6F64, #FF7364);
+}
+
+#mobile-berry {
+  position: relative;
+  background: linear-gradient(to bottom, #9BDBCD, #9AD9CE, #93D5C9, #8DD1C2, #8BD3C5);
+}
+
+#mobile-berry-header, #mobile-orange-header {
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 25%;
+  font-family: "Spectral";
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+#mobile-berry-text, #mobile-orange-text {
+  position: absolute;
+  text-align: center;
+  top: 75%;
+  left: 17.5%;
+  font-family: "Arvo";
+  font-size: 12px;
+  white-space: pre;
+}
+
+#mobile-orange {
+  position: relative;
+  background: linear-gradient(to bottom, #4BC8FE, #4ECCFF, #50CEFF, #52CFFF, #57D2FE, #57D2FE, #48C9FF, #57D1FF, #5CD0FF, #5BCFFE, #5BD1FF, #5ED3FF, #5BD1FF);
+}
+
+#egg-mobile, #cup-mobile, #berry-mobile, #orange-mobile {
+  max-width: 100%;
+}
+
+.interval {
+  width: 100%;
+  height: 50px;
+}
+
+@media (max-width: 870px) {
+#testimonial-header {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Arvo";
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 7.5px;
+}
+}
+
+@media (min-width: 870px) {
+  #testimonial-header {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Arvo";
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 10px;
+  }
+}
+
+@media (min-width: 870px) {
+#testimonial-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "emily-column thomas-column jennie-column";
+}
+}
+
+@media (max-width: 870px) {
+  #testimonial-content {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-areas: "emily-column thomas-column jennie-column";
+  }
+}
+
+#emily-column, #thomas-column, #jennie-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#emily-image, #thomas-image, #jennie-image {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  max-height: 75%;
+}
+
+@media (min-width: 870px) {
+#emily-content, #thomas-content, #jennie-content {
+  text-align: center;
+  font-family: "Arvo";
+  font-size: 12px;
+  width: 100%;
+}
+}
+
+@media (max-width: 870px) {
+  #emily-content, #thomas-content, #jennie-content {
+    text-align: center;
+    Font-family: "Arvo";
+    font-size: 10px;
+    width: 100%;
+  }
+
+  #jennie-content, #jennie-interval, #jennie-name, #jennie-title {
+    margin-left: 4px;
+  }
+}
+
+#emily-interval, #thomas-interval, #jennie-interval {
+  width: 100%;
+  height: 20px;
+}
+
+#emily-name, #thomas-name, #jennie-name {
+  text-align: center;
+  font-family: "Spectral";
+  font-weight: bolder;
+  width: 100%;
+}
+
+#emily-title, #thomas-title, #jennie-title {
+  text-align: center;
+  font-family: "Arvo";
+  color: gray;
+  font-size: 10px;
+  width: 100%;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#gallery-milkbottles, #gallery-orange, #gallery-cone, #gallery-sugarcubes {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #90D4C5;
+  text-align: center;
+}
+
+.half-interval {
+  width: 100%;
+  height: 25px;
+}
+
+#footer-logo {
+  font-family: "Akshar";
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+}
+
+#footer-links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "empty-cell empty-cell empty-cell empty-cell footer-about footer-services footer-projects footer-contact empty-cell empty-cell empty-cell empty-cell";
+}
+
+#footer-about, #footer-services, #footer-projects, #footer-contact {
+  font-family: "Arvo";
+  font-size: 12px;
+  color: black !important;
+  text-decoration: none;
+}
+
+#footer-about:hover, #footer-services:hover, #footer-projects:hover, #footer-contact:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+#icon-gallery {
+  width: 100%;
+}
+
+#icon-facebook, #icon-instagram, #icon-twitter, #icon-pinterest {
+  margin: 10px;
+}
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }

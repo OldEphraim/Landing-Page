@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" type="text/css" href="./index.css" media="screen" />
+
+  <script>
+    function appearOnClick() {
+      if (document.getElementById("hamburger-menu").style.display === "none") {
+        document.getElementById("hamburger-menu").style.display = "grid";
+      } else {
+        document.getElementById("hamburger-menu").style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <nav id="navbar">
+    <div id="navbar-logo">sunnyside</div>
+  <div id="empty-cell"></div>
+  <div id="empty-cell"></div>
+  <div id="empty-cell"></div>
+  <div id="navbar-about-container"><a href="#" id="navbar-about" class="hidden-mobile">      About</a></div>
+  <div id="navbar-services-container"><a href="#" id="navbar-services" class="hidden-mobile">   Services</a></div>
+  <div id="navbar-projects-container"><a href="#" id="navbar-projects" class="hidden-mobile">   Projects</a></div>
+  <div id="navbar-contact-container"><a href="#" id="navbar-contact" class="hidden-mobile">   Contact</a></div>
+  <a onclick="appearOnClick()"><img src="./images/icon-hamburger.svg" alt="hamburger-icon" id="hamburger-icon" class="hidden-desktop"></img></a>
+</nav>
+  <div id="hamburger-menu">
+    <div id="hamburger-row-1">About</div>
+    <div id="hamburger-row-2">Services</div>
+    <div id="hamburger-row-3">Projects</div>
+    <div id="hamburger-row-4">Contact</div>
+  </div>
+  <header>
+  <div id="header-words">We are creatives</div>
+  <div id="arrow-bottom"><img src="./images/icon-arrow-down.svg" alt="arrow-down" id="arrow-down"></img></div>
+  <div><img src="./images/desktop/image-header.jpg" alt="image-header" id="header-image"></img></div>
+</header>
+<main class="hidden-mobile">
+  <div class="1a" id="transform-brand-1a">
+    <div id="transform-header-1a">
+  Transform your <br />brand</div>
+    <div id="transform-text-1a">
+  We are a full-service creative agency specializing in <br />helping brands grow fast. Engage your clients through <br />compelling visuals that do most of the marketing for you.</div>
+    <div id="learn-more-1a">
+  Learn more</div></div>
+  <div class="1b" id="egg-container"><img src="./images/desktop/image-transform.jpg" alt="egg" id="egg"></img>
+    <div id="egg-left-column"></div>
+    <div id="egg-right-column"></div>
+  </div>
+  <div class="2a" id="cup-container"><img src="./images/desktop/image-stand-out.jpg" alt="cup" id="cup"></img>
+    <div id="cup-left-column"></div>
+    <div id="cup-right-column"></div>
+  </div>
+  <div class="2b" id="transform-brand-2b">
+    <div id="transform-header-2b">
+  Stand out to the right <br />audience</div>
+    <div id="transform-text-2b">
+  Using a collaborative formula of designers, researchers, <br />photographers, videographers, and copywriters, we’ll <br />build and extend your brand in digital places.</div>
+    <div id="learn-more-2b">
+  Learn more</div></div>
+  <div class="3a" id="berry-container"><img src="./images/desktop/image-graphic-design.jpg" alt="berry" id="berry"></img>
+    <div id="berry-left-column"></div>
+    <div id="berry-right-column"></div>
+  <div id="berry-header">Graphic Design</div>
+  <div id="berry-text">Great design makes you memorable. We deliver<br />  artwork that underscores your brand message<br />        and captures potential clients’ attention.</div>
+</div>
+  <div class="3b" id="orange-container"><img src="./images/desktop/image-photography.jpg" alt="orange" id="orange"></img>
+    <div id="orange-left-column"></div>
+    <div id="orange-right-column"></div>
+  <div id="orange-header"> Photography</div>
+  <div id="orange-text">    Increase your credibility by getting the most<br /> stunning, high-quality photos that improve your<br />                                   business image.</div>
+</div>
+</main>
+<div id="wrapper" class="hidden-desktop">
+  <div id="mobile-egg" class="hidden-desktop">
+    <img src="./images/desktop/image-transform.jpg" alt="egg" id="egg-mobile" class="hidden-desktop"></img>
+  </div>
+  <div id="mobile-transform" class="hidden-desktop">
+    <div id="mobile-transform-header" class="hidden-desktop">
+  Transform your <br />brand</div>
+    <div id="mobile-transform-text" class="hidden-desktop">
+  We are a full-service creative agency specializing in <br />helping brands grow fast. Engage your clients through <br />compelling visuals that do most of the marketing for you.</div>
+    <div id="mobile-learn-more" class="hidden-desktop">
+  Learn more</div></div>
+<div id="mobile-cup" class="hidden-desktop">
+    <img src="./images/desktop/image-stand-out.jpg" alt="cup" id="cup-mobile" class="hidden-desktop"></img>
+  </div>
+<div id="mobile-stand" class="hidden-desktop">
+  <div id="mobile-stand-header" class="hidden-desktop">
+Stand out to the right <br />audience</div>
+  <div id="mobile-stand-text" class="hidden-desktop">
+Using a collaborative formula of designers, researchers, <br />photographers, videographers, and copywriters, we’ll <br />build and extend your brand in digital places.</div>
+  <div id="mobile-learn-more" class="hidden-desktop">
+Learn more</div>
+  </div>
+  <div id="mobile-berry" class="hidden-desktop">
+    <img src="./images/desktop/image-graphic-design.jpg" alt="berry" id="berry-mobile" class="hidden-desktop"></img>
+  <div id="mobile-berry-header">Graphic Design</div>
+  <div id="mobile-berry-text">Great design makes you memorable. We deliver<br />  artwork that underscores your brand message<br />        and captures potential clients’ attention.</div>
+  </div><div id="mobile-orange" class="hidden-desktop">
+    <img src="./images/desktop/image-photography.jpg" alt="orange" id="orange-mobile" class="hidden-desktop"></img>
+    <div id="mobile-orange-header"> Photography</div>
+    <div id="mobile-orange-text">    Increase your credibility by getting the most<br /> stunning, high-quality photos that improve your<br />                                   business image.</div>
+  </div>
+</div>
+<div class="interval"></div>
+<div id="testimonial-header">
+  Client testimonials</div>
+<div class="interval"></div>
+<div id="testimonial-content">
+  <div id="emily-column">
+    <div id="emily-image-container"><img src="./images/image-emily.jpg" alt="emily" id="emily-image"></img></div>
+  <div id="emily-content">We put our trust in Sunnyside and they<br /> delivered, making sure our needs were met<br /> and deadlines were always hit.</div>
+  <div id="emily-interval"></div>
+  <div id="emily-name">Emily R.</div>
+  <div id="emily-title">Marketing Director</div></div>
+<div id="thomas-column">
+    <div id="thomas-image-container"><img src="./images/image-thomas.jpg" alt="thomas" id="thomas-image"></img></div>
+  <div id="thomas-content">Sunnyside’s enthusiasm coupled with their<br /> keen interest in our brand’s success made it<br /> a satisfying and enjoyable experience.</div>
+  <div id="thomas-interval"></div>
+  <div id="thomas-name">Thomas S.</div>
+  <div id="thomas-title">Chief Operating Officer</div></div>
+<div id="jennie-column">
+  <div id="jennie-image-container"><img src="./images/image-jennie.jpg" alt="jennie" id="jennie-image"></img></div>
+  <div id="jennie-content">Incredible end result!<br /> Our sales increased<br /> over 400% when we<br /> worked with Sunnyside.<br /> Highly recommended!</div>
+  <div id="jennie-interval"></div>
+  <div id="jennie-name">Jennie F.</div>
+  <div id="jennie-title">Business Owner</div></div></div>
+<div class="interval"></div>
+<div id="gallery">
+<img src="./images/mobile/image-gallery-milkbottles.jpg" alt="gallery-milkbottles" id="gallery-milkbottles"></img>
+<img src="./images/mobile/image-gallery-orange.jpg" alt="gallery-orange" id="gallery-orange"></img>
+<img src="./images/mobile/image-gallery-cone.jpg" alt="gallery-cone" id="gallery-cone"></img>
+<img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="gallery-sugarcubes" id="gallery-sugarcubes"></img>
+</div>
+<footer>
+  <div class="half-interval"></div>
+  <div id="footer-logo">sunnyside</div>
+  <div class="half-interval"></div>
+  <div id="footer-links">
+    <div id="empty-cell"></div>
+    <div id="empty-cell"></div>
+    <div id="empty-cell"></div>
+    <div id="empty-cell"></div>
+    <div id="footer-about"><a href="#" id="footer-about">About</a></div>
+    <div id="footer-services"><a href="#" id="footer-services">Services</a></div>
+    <div id="footer-projects"><a href="#" id="footer-projects">Projects</a></div>
+    <div id="footer-contact"><a href="#" id="footer-contact">Contact</a></div>
+    <div id="empty-cell"></div>
+    <div id="empty-cell"></div>
+    <div id="empty-cell"></div>
+    <div id="empty-cell"></div>
+  </div>
+  <div class="interval"></div>
+  <div id="icon-gallery">
+    <img src="./images/icon-facebook.svg" alt="icon-facebook" id="icon-facebook"></img>
+    <img src="./images/icon-instagram.svg" alt="icon-instagram" id="icon-instagram"></img>
+    <img src="./images/icon-twitter.svg" alt="icon-twitter" id="icon-twitter"></img>
+    <img src="./images/icon-pinterest.svg" alt="icon-pinterest" id="icon-pinterest"></img>
+  </div>
+  <div class="half-interval"></div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Alan Garber</a>.
+  </div>
+</footer>
+</body>
+</html>
