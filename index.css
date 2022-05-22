@@ -7,13 +7,13 @@ html, body {
   padding: 0;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 970px) {
   .hidden-mobile {
     display: none;
   }
 }
 
-@media (min-width: 870px) {
+@media (min-width: 970px) {
   .hidden-desktop {
     display: none;
   }
@@ -48,7 +48,7 @@ html, body {
   white-space: pre;
 }
 
-@media (min-width: 870px) {
+@media (min-width: 970px) {
 #navbar-about-container:hover, #navbar-services-container:hover, #navbar-projects-container:hover, #navbar-contact-container:hover {
   background-color: white;
   text-transform: uppercase;
@@ -119,13 +119,13 @@ header {
   z-index: 1;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 769px) {
   #header-words {
-    font-size: 30px !important;
+    font-size: 21px !important;
   }
 }
 
-@media (min-width: 870px) {
+@media (min-width: 769px) {
   #header-words {
     font-size: 42px !important;
   }
@@ -377,14 +377,42 @@ main {
   font-weight: bolder;
 }
 
+@media (max-width: 570px) {
+  #mobile-berry-header, #mobile-orange-header {
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 25%;
+  font-family: "Spectral";
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+  #mobile-berry-text, #mobile-orange-text {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    top: 60%;
+    left: 24%;
+    font-family: "Arvo";
+    font-size: 6px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
 #mobile-berry-text, #mobile-orange-text {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   top: 75%;
   left: 17.5%;
   font-family: "Arvo";
   font-size: 12px;
-  white-space: pre;
 }
 
 #mobile-orange {
@@ -401,7 +429,7 @@ main {
   height: 50px;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 970px) {
 #testimonial-header {
   width: 100%;
   text-align: center;
@@ -413,7 +441,7 @@ main {
 }
 }
 
-@media (min-width: 870px) {
+@media (min-width: 970px) {
   #testimonial-header {
     width: 100%;
     text-align: center;
@@ -425,7 +453,7 @@ main {
   }
 }
 
-@media (min-width: 870px) {
+@media (min-width: 970px) {
 #testimonial-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -433,7 +461,7 @@ main {
 }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 970px) {
   #testimonial-content {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -451,9 +479,10 @@ main {
   margin: auto;
   border-radius: 50%;
   max-height: 75%;
+  max-width: 90%;
 }
 
-@media (min-width: 870px) {
+@media (min-width: 970px) {
 #emily-content, #thomas-content, #jennie-content {
   text-align: center;
   font-family: "Arvo";
@@ -462,7 +491,7 @@ main {
 }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 970px) {
   #emily-content, #thomas-content, #jennie-content {
     text-align: center;
     Font-family: "Arvo";
