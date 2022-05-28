@@ -410,9 +410,10 @@ main {
   flex-wrap: wrap;
   text-align: center;
   top: 75%;
-  left: 17.5%;
+  left: 24%;
   font-family: "Arvo";
   font-size: 12px;
+  width: 60%;
 }
 
 #mobile-orange {
